@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>PadLock-icon.png</file>
+        <file>Actions-document-decrypt-icon.png</file>
+        <file>Actions-document-encrypt-icon.png</file>
+        <file>PadLockSmall.png</file>
+        <file>Lock-icon.png</file>
+        <file>UnLock-icon.png</file>
+        <file>chip-icon.png</file>
+    </qresource>
+</RCC>
