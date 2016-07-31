@@ -46,7 +46,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="encryptTab">
      <attribute name="icon">
@@ -156,6 +156,29 @@
       <property name="icon">
        <iconset resource="images.qrc">
         <normaloff>:/img/Actions-document-encrypt-icon.png</normaloff>:/img/Actions-document-encrypt-icon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stopEncryptBtn">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>90</y>
+        <width>76</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/img/Stop-Normal-Red-icon.png</normaloff>:/img/Stop-Normal-Red-icon.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -279,6 +302,84 @@
       </property>
       <property name="text">
        <string>Input File:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stopDecryptBtn">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>90</y>
+        <width>76</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/img/Stop-Normal-Red-icon.png</normaloff>:/img/Stop-Normal-Red-icon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="KeyTab">
+     <attribute name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/img/key-icon (1).png</normaloff>:/img/key-icon (1).png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Key</string>
+     </attribute>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>25</y>
+        <width>306</width>
+        <height>56</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>5</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Key:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="encryptBtn_2">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>85</y>
+        <width>96</width>
+        <height>46</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images.qrc">
+        <normaloff>:/img/Generate-keys-icon.png</normaloff>:/img/Generate-keys-icon.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>32</width>
+        <height>32</height>
+       </size>
       </property>
      </widget>
     </widget>

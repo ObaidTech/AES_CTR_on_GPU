@@ -8,28 +8,30 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = AES_CTR_on_GPU
-TEMPLATE = app
+TARGET          =   AES_CTR_on_GPU
+TEMPLATE        =   app
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    obencryptor.cpp
+SOURCES         +=  main.cpp \
+                    mainwindow.cpp \
+                    obcrypto.cpp \
+                    encryptionthread.cpp \
+                    aes.cpp
 
-HEADERS  += mainwindow.h \
-    obencryptor.h
+HEADERS         +=  mainwindow.h \
+                    obcrypto.h \
+                    encryptionthread.h \
+                    aes.h
 
-FORMS    += mainwindow.ui
+FORMS           +=  mainwindow.ui
 
-DISTFILES +=
-
-RESOURCES += \
-    images.qrc
+RESOURCES       +=  images.qrc
 
 win32:CONFIG(release, debug|release): LIBS += -L"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/Win32/" -lOpenCL
 else:win32:CONFIG(debug, debug|release): LIBS += -L"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/Win32/" -lOpenCL
 else:unix: LIBS += -L"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/Win32/" -lOpenCL
 
-INCLUDEPATH +=  "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/Win32"\
-                "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/include"
-DEPENDPATH +=   "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/Win32"\
-                "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/include"
+INCLUDEPATH     +=  "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/Win32"\
+                    "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/include"
+
+DEPENDPATH      +=  "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/lib/Win32"\
+                    "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v7.5/include"

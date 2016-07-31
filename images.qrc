@@ -7,5 +7,9 @@
         <file>Lock-icon.png</file>
         <file>UnLock-icon.png</file>
         <file>chip-icon.png</file>
+        <file>Key-icon.png</file>
+        <file>Generate-keys-icon.png</file>
+        <file>key-icon (1).png</file>
+        <file>Stop-Normal-Red-icon.png</file>
     </qresource>
 </RCC>
